@@ -44,7 +44,7 @@ const KeywordsModal = ({ keywords, loading, isOpen, closeModal }) => {
           <ModalCloseButton />
           <ModalBody display="flex" justifyContent="center" alignItems="center">
             {loading ? (
-              <CircularProgress isIndeterminate color="teal.700" />
+              <CircularProgress isIndeterminate color="teal.500" />
             ) : (
               <Text>{keywords}</Text>
             )}

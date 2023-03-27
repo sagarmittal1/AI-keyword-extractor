@@ -1,10 +1,10 @@
 import { Heading, Image, Text, Icon } from '@chakra-ui/react';
-import { FcIdea } from 'react-icons/fc';
+import { TbBulbFilled } from 'react-icons/tb';
 
 const Header = () => {
   return (
     <>
-      <Icon as={FcIdea} boxSize={100} />
+      <Icon as={TbBulbFilled} boxSize={100} />
       <Heading color="white" marginBottom="1rem">
         AI Keyword Extractor
       </Heading>

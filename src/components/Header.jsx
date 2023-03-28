@@ -8,7 +8,7 @@ const Header = () => {
       <Heading color="white" marginBottom="1rem">
         AI Keyword Extractor
       </Heading>
-      <Text fontSize={20}>
+      <Text fontSize={20} textAlign="center">
         Paste the text below & it will extract the keywords for you.
       </Text>
     </>

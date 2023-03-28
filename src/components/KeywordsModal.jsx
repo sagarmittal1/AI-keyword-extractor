@@ -10,6 +10,7 @@ import {
   ModalCloseButton,
   CircularProgress,
   useToast,
+  useMediaQuery,
 } from '@chakra-ui/react';
 import { IoCopy } from 'react-icons/io5';
 
@@ -23,6 +24,7 @@ const copyTextToClipboard = (text) => {
 
 const KeywordsModal = ({ keywords, loading, isOpen, closeModal }) => {
   const toast = useToast();
+  const [isMobile] = useMediaQuery('(max-width: 768px)');
 
   const copyText = () => {
     copyTextToClipboard(keywords);
@@ -37,7 +39,7 @@ const KeywordsModal = ({ keywords, loading, isOpen, closeModal }) => {
 
   return (
     <>
-      <Modal isOpen={isOpen} onClose={closeModal}>
+      <Modal isOpen={isOpen} onClose={closeModal} size={isMobile ? 'sm' : 'md'}>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Keywords</ModalHeader>
